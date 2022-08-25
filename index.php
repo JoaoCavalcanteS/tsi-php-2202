@@ -31,11 +31,37 @@ do{
 
 
 //IF
-if(11>10){
+if(5>10){
     echo "<br>CINCO É MAIOR DO QUE DEZ";
 }
 else{
     echo "CINCO NÃO É MAIOR DO QUE 10";
 }
 //FIM CONDICIONAIS
+$Dias=6;
+
+//DIAS DA SEMANA//
+switch ($Dias) {
+    case '0':
+        echo "<br>Domingo";
+        break;
+    case '1':
+        echo "<br>Segunda";
+        break;  
+    case '2':
+        echo "<br>Terça";
+        break;
+    case '3':
+        echo "<br>Quarta";
+        break;  
+    case '4':
+        echo "<br>Quinta";
+        break;  
+    case '5':
+        echo "<br>Sexta";
+        break;
+    case '6':
+        echo "<br>Sábado";
+        break;
+}
 ?>
