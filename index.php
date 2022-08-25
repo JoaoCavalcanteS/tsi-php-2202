@@ -10,7 +10,7 @@ $nome='Aluno, João';
 echo "Olá, $nome"; //INTERPOLAÇÃO
 //FOR//
 for ($i = 1; $i <= 10; $i++){
-    echo "<br>JOAO";
+    echo "<br>JOAOo";
 }
 
 //WHILE;
