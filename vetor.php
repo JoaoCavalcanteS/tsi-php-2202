@@ -41,5 +41,14 @@ for($i=0; $i<count($alunos); $i++){
         <td>{$alunos[$i]['Semestre']}</td>
     </tr>";
 }
+
+//foreach é um FOR para Arrays, irá depurar todo o seu vetor esperando um indice e valor
+foreach($alunos as $ind => $val){
+    echo "<tr>
+        <td>{$val['matricula']}</td>
+        <td>{$val['Nome']}<td>
+        <td>{$val['Semestre']}</td>
+    </tr>";
+}
 echo "</table>";
 ?>
