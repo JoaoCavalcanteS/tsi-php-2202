@@ -25,9 +25,11 @@ $consulta-> bindParam(':inicio', $inicio);
 A função $consulta-> bindParam() substitui os rotulos (ex:nome) pelos dados inseguros
 */
 if($consulta->execute()){
-    echo "gravou com sucesso!";
+    $gravou = true;
 }
 else{
-    echo "ERRO AO GRAVAR NO BANCO DE DADOS";
+    $gravou = false;
 }
+
+include 'index.php';
 //Executa a consulta no sgbd
