@@ -20,7 +20,14 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $autenticou = false;
 
-if( isset($usuario['nome']) ){
+if( isset($usuario['nome']) ){//se existir usuario
+
+    if(password_verify($senha, $usuario['senha'])){
+
+        session_start();
+        $_SESSION['id'] = $email;
+        header('Location: /tsi-php-2202/menu');
+    }
 
 }
 

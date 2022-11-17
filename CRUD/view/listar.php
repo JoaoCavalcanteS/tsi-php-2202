@@ -48,7 +48,7 @@
                                                 </button>    
                                             </td>
                                             <td>
-                                                <button class = 'btn btn-danger' formaction='atualizarForm.php' value = '{$aluno["ID"]}' name='id'> 
+                                                <button class = 'btn btn-danger' formaction='apagar.php' value = '{$aluno["ID"]}' name='id'> 
                                                     Atualizar   
                                                 </button>    
                                             </td>

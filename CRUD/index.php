@@ -1,4 +1,5 @@
 <?php
+require_once '../controleDeSessao/controle.php';
 require_once '../bancoDeDados/conecta.php';
 
 $STMT = $bd->query('SELECT ID, NOME, TURNO, INICIO FROM ALUNOS ');
@@ -19,4 +20,3 @@ while($linha = $STMT->fetch()) {
 
 include 'view/listar.php';
 
-?>
